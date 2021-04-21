@@ -19,3 +19,8 @@ Route::get('/', function () {
 Route::get('admin/', function () {
     return view('admin.index');
 });
+
+Route::get('/kota', 'KotaController@index');
+Route::post('/create/kota', 'KotaController@createkota');
+Route::get('/delete/{id}/kota', 'KotaController@delete');
+Route::post('/edit/{id}/kota', 'KotaController@edit');

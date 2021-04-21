@@ -26,6 +26,7 @@
   <!-- summernote -->
   <link rel="stylesheet" href="{{asset('plugins/summernote/summernote-bs4.min.css')}}">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  @yield('header')
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -99,6 +100,16 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{asset('dist/js/pages/dashboard.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script>
+  @if(Session::has('sukses'))
+    toastr.success("{{Session::get('sukses')}}", "Sukses") 
+  @endif
+</script>
+<script>
+  @if(Session::has('error'))
+    toastr.error("{{Session::get('error')}}", "Error") 
+  @endif
+</script>
 
 
 @yield('footer')
