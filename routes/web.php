@@ -25,3 +25,9 @@ Route::post('/create/kota', 'KotaController@createkota');
 Route::get('/delete/{id}/kota', 'KotaController@delete');
 Route::post('/edit/{id}/kota', 'KotaController@edit');
 Route::get('/artikel', 'ArtikelController@index');
+
+//panduan
+Route::get('/panduan','PanduanController@index');
+Route::post('panduan/tambah','PanduanController@tambahPanduan');
+Route::get('panduan/hapus/{id}','PanduanController@hapusPanduan');
+Route::post('panduan/edit/{id}','PanduanController@editPanduan');

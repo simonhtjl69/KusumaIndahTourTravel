@@ -48,6 +48,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="/panduan" class="nav-link">
+            <i class="nav-icon fas fa-question-circle"></i>
+              <p>
+                Panduan
+              </p>
+            </a>
+          </li>
           
              </ul>
       </nav>
