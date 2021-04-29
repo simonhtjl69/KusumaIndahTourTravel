@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title','Kota')
 @section('header')
 <link rel="stylesheet" href="{{asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
@@ -21,10 +22,10 @@
                   
                     <div class="form-group">
                     <label for="exampleInputEmail1">Nama Kota</label>
-                    <input type="text" class="form-control  @if($errors->has('kota')) is-invalid   @endif" name="kota" value="{{old('kota')}}" id="exampleInputEmail1" placeholder="Nama Kota">
+                    <input type="text" class="form-control  @if($errors->has('nama_kota')) is-invalid   @endif" name="nama_kota" value="{{old('kota')}}" id="exampleInputEmail1" placeholder="Nama Kota">
                   
-                        <Center>  @if($errors->has('kota'))
-                                   <span class="inv">{{$errors->first('kota')}}</span>
+                        <Center>  @if($errors->has('nama_kota'))
+                                   <span class="inv">{{$errors->first('nama_kota')}}</span>
                                @endif
                         </Center>
                     </div>
@@ -63,10 +64,10 @@
                   
                     <div class="form-group">
                     <label for="exampleInputEmail1">Nama Kota</label>
-                    <input type="text" class="form-control  @if($errors->has('kota')) is-invalid   @endif" name="kota" value="{{$kt->nama_kota}}" id="exampleInputEmail1" placeholder="Nama Kota">
+                    <input type="text" class="form-control  @if($errors->has('nama_kota')) is-invalid   @endif" name="nama_kota" value="{{$kt->nama_kota}}" id="exampleInputEmail1" placeholder="Nama Kota">
                   
-                        <Center>  @if($errors->has('kota'))
-                                   <span class="inv">{{$errors->first('kota')}}</span>
+                        <Center>  @if($errors->has('nama_kota'))
+                                   <span class="inv">{{$errors->first('nama_kota')}}</span>
                                @endif
                         </Center>
                     </div>

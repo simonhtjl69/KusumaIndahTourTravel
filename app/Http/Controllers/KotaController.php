@@ -18,12 +18,13 @@ class KotaController extends Controller
     public function createkota(Request $request)
     {
         $this->validate($request, [
-            'kota' => 'required'
+            'nama_kota' => 'required|unique:kota'
         ]);
 
         $kota = new Kota;
-        $kota->nama_kota = $request->kota;
+        $kota->nama_kota = $request->nama_kota;
         $kota->save();
+
         return redirect()->back()->with('sukses', 'Berhasil menambah kota');
     }
 
@@ -31,17 +32,17 @@ class KotaController extends Controller
     {
         Kota::find($id)->delete($id);
 
-        return redirect()->back();
+        return redirect()->back()->with('sukses', 'Berhasil menghapus kota');;
     }
 
 
     public function edit(Request $request, $id)
     {
         $this->validate($request, [
-            'kota' => 'required'
+            'nama_kota' => 'required'
         ]);
         $kota = Kota::find($id);
-        $kota->nama_kota = $request->kota;
+        $kota->nama_kota = $request->nama_kota;
         $kota->save();
         return redirect()->back()->with('sukses', 'Berhasil mengupdate kota');
     }

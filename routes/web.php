@@ -24,3 +24,4 @@ Route::get('/kota', 'KotaController@index');
 Route::post('/create/kota', 'KotaController@createkota');
 Route::get('/delete/{id}/kota', 'KotaController@delete');
 Route::post('/edit/{id}/kota', 'KotaController@edit');
+Route::get('/artikel', 'ArtikelController@index');
