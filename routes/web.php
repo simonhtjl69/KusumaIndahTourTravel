@@ -31,3 +31,11 @@ Route::get('/panduan','PanduanController@index');
 Route::post('panduan/tambah','PanduanController@tambahPanduan');
 Route::get('panduan/hapus/{id}','PanduanController@hapusPanduan');
 Route::post('panduan/edit/{id}','PanduanController@editPanduan');
+//search belum
+
+//travel_reguler
+Route::get('/travel_reguler','TRegulerController@index');
+Route::post('/travel_reguler/tambah','TRegulerController@tambah');
+Route::get('/travel_reguler/hapus/{id}','TRegulerController@hapus');
+Route::get('travel_reguler/cari','TRegulerController@cari');
+Route::post('travel_reguler/edit/{id}','TRegulerController@edit');
