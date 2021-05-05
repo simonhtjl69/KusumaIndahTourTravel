@@ -19,6 +19,7 @@ class TRegulerController extends Controller
 		
         return redirect()->back()->with('sukses', 'Berhasil menghapus travel');
     }
+ 
 
     public function tambah(Request $request)
     {
@@ -28,8 +29,10 @@ class TRegulerController extends Controller
             'tujuan'=>'required',
             'tanggal'=>'required',
             'jam'=>'required',
+            'jenis_kendaraan'=>'required',
             'harga'=>'required',
             'seat'=>'required',
+            'deskripsi'=>'required',
         ]);
         
         $travel_reguler = new TravelReguler;
@@ -39,11 +42,12 @@ class TRegulerController extends Controller
         $travel_reguler->tujuan = $request->tujuan;
         $travel_reguler->tanggal = $request->tanggal;
         $travel_reguler->jam = $request->jam;
+        $travel_reguler->jenis_kendaraan = $request->jenis_kendaraan;
         $travel_reguler->harga = $request->harga;
         $travel_reguler->seat = $request->seat;
+        $travel_reguler->deskripsi = $request->deskripsi;
 
         $travel_reguler->save();
-
         return redirect()->back()->with('sukses', 'Berhasil menambah Travel');
     }
 
@@ -54,8 +58,10 @@ class TRegulerController extends Controller
             'tujuan'=>'required',
             'tanggal'=>'required',
             'jam'=>'required',
+            'jenis_kendaraan'=>'required',
             'harga'=>'required',
             'seat'=>'required',
+            'deskripsi'=>'required',
         ]);
         $travel_reguler = TravelReguler::find($id);
         $travel_reguler->nama_travel = $request->nama_travel;
@@ -63,8 +69,10 @@ class TRegulerController extends Controller
         $travel_reguler->tujuan = $request->tujuan;
         $travel_reguler->tanggal = $request->tanggal;
         $travel_reguler->jam = $request->jam;
+        $travel_reguler->jenis_kendaraan = $request->jenis_kendaraan;
         $travel_reguler->harga = $request->harga;
         $travel_reguler->seat = $request->seat;
+        $travel_reguler->deskripsi = $request->deskripsi;
         $travel_reguler->save();
         return redirect()->back()->with('sukses', 'Berhasil mengedit Travel');
     }

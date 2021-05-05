@@ -50,6 +50,11 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="exampleInputEmail1">Jenis Kendaraan</label>
+                        <input type="text" class="form-control  @if($errors->has('jenis_kendaraan')) is-invalid   @endif" name="jenis_kendaraan" value="{{old('jenis_kendaraan')}}" id="exampleInputEmail1" placeholder="jenis_kendaraan">
+                    </div>
+
+                    <div class="form-group">
                         <label for="exampleInputEmail1">Harga</label>
                         <input type="number" class="form-control  @if($errors->has('harga')) is-invalid   @endif" name="harga" value="{{old('harga')}}" id="exampleInputEmail1" placeholder="harga">
                     </div>
@@ -57,6 +62,11 @@
                     <div class="form-group">
                         <label for="exampleInputEmail1">Seat/Kursi</label>
                         <input type="text" class="form-control  @if($errors->has('seat')) is-invalid   @endif" name="seat" value="{{old('seat')}}" id="exampleInputEmail1" placeholder="seat">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Deskripsi</label>
+                        <input type="text" class="form-control  @if($errors->has('deskripsi')) is-invalid   @endif" name="deskripsi" value="{{old('deskripsi')}}" id="exampleInputEmail1" placeholder="deskripsi">
                     </div>
                 </div>
 
@@ -120,6 +130,11 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="exampleInputEmail1">Jenis Kendaraan</label>
+                        <input type="text" class="form-control  @if($errors->has('jenis_kendaraan')) is-invalid   @endif" name="jenis_kendaraan" value="{{old('jenis_kendaraan')}}" id="exampleInputEmail1" placeholder="jenis_kendaraan">
+                    </div>
+
+                    <div class="form-group">
                         <label for="exampleInputEmail1">Harga</label>
                         <input type="number" class="form-control  @if($errors->has('harga')) is-invalid   @endif" name="harga" value="{{$tr->harga}}" id="exampleInputEmail1" placeholder="harga">
                     </div>
@@ -127,6 +142,11 @@
                     <div class="form-group">
                         <label for="exampleInputEmail1">Seat/Kursi</label>
                         <input type="text" class="form-control  @if($errors->has('seat')) is-invalid   @endif" name="seat" value="{{$tr->seat}}" id="exampleInputEmail1" placeholder="seat">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Deskripsi</label>
+                        <input type="text" class="form-control  @if($errors->has('deskripsi')) is-invalid   @endif" name="deskripsi" value="{{old('deskripsi')}}" id="exampleInputEmail1" placeholder="deskripsi">
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
@@ -182,8 +202,10 @@
                     <th>Tujuan</th>
                     <th>Tanggal</th>
                     <th>Jam</th>
+                    <th>Jenis Kendaraan</th>
                     <th>Harga</th>
                     <th>Seat</th>
+                    <th>Deskripsi</th>
                     <th>Aksi</th>
                   </tr>
                   </thead>
@@ -197,8 +219,10 @@
                       <td>{{$tr->tujuan}}</td>
                       <td>{{$tr->tanggal}}</td>
                       <td>{{$tr->jam}}</td>
+                      <td>{{$tr->jenis_kendaraan}}</td>
                       <td>{{$tr->harga}}</td>
                       <td>{{$tr->seat}}</td>
+                      <td>{{$tr->deskripsi}}</td>
                       <td>
                           <a href="#" class="btn btn-danger btn-sm delete" nama-produk="{{$tr->nama_travel}}" produk-id="{{$tr->id}}">Delete</a>
 									        <button type="button" class="btn  btn-sm btn-warning" data-toggle="modal" data-target="#modal-edit{{$tr->id}}">

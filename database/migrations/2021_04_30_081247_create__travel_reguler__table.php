@@ -20,8 +20,11 @@ class CreateTravelRegulerTable extends Migration
             $table->string('tujuan');
             $table->date('tanggal');
             $table->time('jam');
+            $table->string('jenis_kendaraan');
             $table->double('harga');
             $table->integer('seat');
+            $table->string('deskripsi');
+            $table->timestamps();
         });
     }
 
