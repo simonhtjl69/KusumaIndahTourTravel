@@ -46,14 +46,15 @@ class TRegulerController extends Controller
         $travel_reguler->harga = $request->harga;
         $travel_reguler->seat = $request->seat;
         $travel_reguler->deskripsi = $request->deskripsi;
-
+        
+        if($request->nama_travel)
         $travel_reguler->save();
         return redirect()->back()->with('sukses', 'Berhasil menambah Travel');
     }
 
     public function edit(Request $request,$id){
         $this->validate($request, [
-            'nama_travel' => 'required',
+            'nama_travel' => 'required|',
             'asal_berangkat' => 'required',
             'tujuan'=>'required',
             'tanggal'=>'required',
