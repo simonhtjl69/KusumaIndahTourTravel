@@ -22,92 +22,124 @@
                   
                     <div class="form-group">
                     <label for="exampleInputEmail1">Judul</label>
-                    <input type="text" class="form-control  @if($errors->has('artikel')) is-invalid   @endif" name="artikel" value="{{old('artikel')}}" id="exampleInputEmail1" placeholder="Judul Artikel">
+                    <input type="text" class="form-control  @if($errors->has('judul')) is-invalid   @endif" name="judul" value="{{old('judul')}}" id="exampleInputEmail1" placeholder="Judul Artikel">
                   
-                        <Center>  @if($errors->has('artikel'))
-                                   <span class="inv">{{$errors->first('artikel')}}</span>
+                        <Center>  @if($errors->has('judul'))
+                                   <span class="inv">{{$errors->first('judul')}}</span>
                                @endif
                         </Center>
                     </div>
                   
+
                   <div class="form-group">
                         <label for="exampleInputEmail1">Deskripsi</label>
                       
-                  <textarea id="summernote" placeholder="Deskripsi">
+                  <textarea id="summernote" placeholder="Deskripsi" name="deskripsi" class="form-control  @if($errors->has('deskripsi')) is-invalid   @endif">
+                    {{old('deskripsi')}}
                   </textarea>
-                  <Center>  @if($errors->has('artikel'))
-                                      <span class="inv">{{$errors->first('artikel')}}</span>
+                  <Center>  @if($errors->has('deskripsi'))
+                                      <span class="inv">{{$errors->first('deskripsi')}}</span>
                                   @endif
                             </Center>
                   </div>
           
-                    <div class="form-group">
+                   
+                  <div class="form-group">
                         <label>Tags</label>
-                        <textarea class="form-control" rows="3" placeholder="Tags"></textarea>
+                        <textarea class="form-control  @if($errors->has('tags')) is-invalid   @endif" rows="3" placeholder="Tags" name="tags">
+                          {{old('tags')}}
+                        </textarea>
+                          <Center>  @if($errors->has('tags'))
+                                   <span class="inv">{{$errors->first('tags')}}</span>
+                               @endif
+                        </Center>
                       </div>
+
+
+
                       <div class="form-group">
                     <label for="exampleInputFile">Gambar 1</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <input type="file" class="custom-file-input @if($errors->has('gbr1')) is-invalid   @endif" id="exampleInputFile" name="gbr1" value="{{old('gbr1')}}">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                       <div class="input-group-append">
                         <span class="input-group-text">Upload</span>
                       </div>
                     </div>
+                      <Center>  @if($errors->has('gbr1'))
+                                   <span class="inv">{{$errors->first('gbr1')}}</span>
+                               @endif
+                        </Center>
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputFile">Gambar 2(Optional)</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <input type="file" class="custom-file-input   @if($errors->has('gbr2')) is-invalid   @endif" id="exampleInputFile" name="gbr2"  value="{{old('gbr2')}}">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                       <div class="input-group-append">
                         <span class="input-group-text">Upload</span>
                       </div>
                     </div>
+                      <Center>  @if($errors->has('gbr2'))
+                                   <span class="inv">{{$errors->first('gbr2')}}</span>
+                               @endif
+                        </Center> 
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputFile">Gambar 3(Optional)</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <input type="file" class="custom-file-input  @if($errors->has('gbr3')) is-invalid   @endif" id="exampleInputFile" name="gbr3"  value="{{old('gbr3')}}">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                       <div class="input-group-append">
                         <span class="input-group-text">Upload</span>
                       </div>
                     </div>
+                      <Center>  @if($errors->has('gbr3'))
+                                   <span class="inv">{{$errors->first('gbr3')}}</span>
+                               @endif
+                        </Center>
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputFile">Gambar 4(Optional)</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <input type="file" class="custom-file-input  @if($errors->has('gbr4')) is-invalid   @endif" id="exampleInputFile" name="gbr4"  value="{{old('gbr4')}}">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                       <div class="input-group-append">
                         <span class="input-group-text">Upload</span>
                       </div>
                     </div>
+                      <Center>  @if($errors->has('gbr4'))
+                                   <span class="inv">{{$errors->first('gbr4')}}</span>
+                               @endif
+                        </Center>
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputFile">Gambar 5(Optional)</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <input type="file" class="custom-file-input  @if($errors->has('gbr5')) is-invalid   @endif" id="exampleInputFile" name="gbr5" value="{{old('gbr5')}}">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                       <div class="input-group-append">
                         <span class="input-group-text">Upload</span>
                       </div>
                     </div>
+                      <Center>  @if($errors->has('gbr5'))
+                                   <span class="inv">{{$errors->first('gbr5')}}</span>
+                               @endif
+                        </Center>
                   </div>
 
                   
