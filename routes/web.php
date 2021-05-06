@@ -42,3 +42,6 @@ Route::post('travel_reguler/edit/{id}', 'TRegulerController@edit');
 
 //Artikel
 Route::post('/create/artikel', 'ArtikelController@create');
+Route::get('/delete/{id}/artikel', 'ArtikelController@delete');
+Route::post('/edit/{id}/artikel', 'ArtikelController@update');
+Route::get('/view/{id}/artikel', 'ArtikelController@view');
