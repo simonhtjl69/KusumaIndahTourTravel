@@ -51,7 +51,7 @@
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">Jenis Kendaraan</label>
-                        <input type="text" class="form-control  @if($errors->has('jenis_kendaraan')) is-invalid   @endif" name="jenis_kendaraan" value="{{old('jenis_kendaraan')}}" id="exampleInputEmail1" placeholder="jenis_kendaraan">
+                        <input type="text" class="form-control  @if($errors->has('jenis_kendaraan')) is-invalid   @endif" name="jenis_kendaraan" value="{{old('jenis_kendaraan')}}" id="exampleInputEmail1" placeholder="jenis kendaraan">
                     </div>
 
                     <div class="form-group">
@@ -131,7 +131,7 @@
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">Jenis Kendaraan</label>
-                        <input type="text" class="form-control  @if($errors->has('jenis_kendaraan')) is-invalid   @endif" name="jenis_kendaraan" value="{{old('jenis_kendaraan')}}" id="exampleInputEmail1" placeholder="jenis_kendaraan">
+                        <input type="text" class="form-control  @if($errors->has('jenis_kendaraan')) is-invalid   @endif" name="jenis_kendaraan" value="{{$tr->jenis_kendaraan}}" id="exampleInputEmail1" placeholder="jenis kendaraan">
                     </div>
 
                     <div class="form-group">
@@ -146,7 +146,7 @@
 
                     <div class="form-group">
                         <label for="exampleInputEmail1">Deskripsi</label>
-                        <input type="text" class="form-control  @if($errors->has('deskripsi')) is-invalid   @endif" name="deskripsi" value="{{old('deskripsi')}}" id="exampleInputEmail1" placeholder="deskripsi">
+                        <input type="text" class="form-control  @if($errors->has('deskripsi')) is-invalid   @endif" name="deskripsi" value="{{$tr->deskripsi}}" id="exampleInputEmail1" placeholder="deskripsi">
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
