@@ -27,10 +27,8 @@
 										<li class="smooth-menu"><a href="#spo">Promo</a></li>
 										<li class="smooth-menu"><a href="#blog">Artikel</a></li>
 										<li class="smooth-menu"><a href="#subs">subscription</a></li>
-										<li>
-											<button class="book-btn">book now
-											</button>
-										</li><!--/.project-btn--> 
+										<li class="smooth-menu"><a href="#">Login</a></li>
+										<!--/.project-btn--> 
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</div><!-- /.main-menu-->
