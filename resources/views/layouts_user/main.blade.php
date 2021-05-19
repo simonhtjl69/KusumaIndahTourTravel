@@ -17,7 +17,7 @@
 		<title>@yield('title','Home')</title>
 
 		<!-- favicon img -->
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/icon.jpeg"/>
 
 		<!--font-awesome.min.css-->
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
