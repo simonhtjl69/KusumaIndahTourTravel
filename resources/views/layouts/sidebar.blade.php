@@ -64,6 +64,15 @@
               </p>
             </a>
           </li>
+           <li class="nav-item">
+            <a href="/produk" class="nav-link">
+            <i class="nav-icon fas fa-bus"></i>
+              <p>
+                Open Trip/Private Trip
+              </p>
+            </a>
+          </li>
+          
           
              </ul>
       </nav>
