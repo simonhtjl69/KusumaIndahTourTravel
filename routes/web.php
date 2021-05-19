@@ -20,11 +20,12 @@ Route::get('admin/', function () {
     return view('admin.index');
 });
 
+//Kota
 Route::get('/kota', 'KotaController@index');
 Route::post('/create/kota', 'KotaController@createkota');
 Route::get('/delete/{id}/kota', 'KotaController@delete');
 Route::post('/edit/{id}/kota', 'KotaController@edit');
-Route::get('/artikel', 'ArtikelController@index');
+
 
 //panduan
 Route::get('/panduan', 'PanduanController@index');
@@ -41,7 +42,14 @@ Route::get('travel_reguler/cari', 'TRegulerController@cari');
 Route::post('travel_reguler/edit/{id}', 'TRegulerController@edit');
 
 //Artikel
+Route::get('/artikel', 'ArtikelController@index');
 Route::post('/create/artikel', 'ArtikelController@create');
 Route::get('/delete/{id}/artikel', 'ArtikelController@delete');
 Route::post('/edit/{id}/artikel', 'ArtikelController@update');
 Route::get('/view/{id}/artikel', 'ArtikelController@view');
+
+//Produk
+Route::get('/produk', 'ProdukController@index');
+Route::post('/create/produk', 'ProdukController@create');
+Route::get('/delete/{id}/produk', 'ProdukController@delete');
+Route::post('/edit/{id}/produk', 'ProdukController@update');
