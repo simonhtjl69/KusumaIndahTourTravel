@@ -76,7 +76,7 @@
 									</h2>
 									<div class="about-btn">
 										<button  class="about-view">
-											explore now
+											paket wisata
 										</button>
 									</div><!--/.about-btn-->
 								</div><!--/.about-us-txt-->
@@ -401,7 +401,7 @@
         </section><!--/.travel-box-->
 		<!--travel-box end-->    
 
-		<!--galley start-->
+		{{-- <!--galley start-->
 		<section id="gallery" class="gallery">
 			<div class="container">
 				<div class="gallery-details">
@@ -499,10 +499,10 @@
 			</div><!--/.container-->
 
 		</section><!--/.gallery-->
-		<!--gallery end-->
+		<!--gallery end--> --}}
 
 		<!--packages start-->
-		<section id="pack" class="packages">
+		<section  class="packages">
 			<div class="container" style="margin-top: -4%;">
 				<div class="gallary-header text-center">
 					<h2>
@@ -514,24 +514,24 @@
 				</div><!--/.gallery-header-->
 				<div class="packages-content">
 					<div class="row">
-
+						@foreach ($produk as $p)
 						<div class="col-md-4 col-sm-6">
 							<div class="single-package-item">
-								<img src="assets/images/packages/p7.jpg" alt="package-place">
+								<img src="{{asset('product/'.$p->gbr1)}}" alt="package-place">
 								<div class="single-package-item-txt">
-									<h3>bali <span class="pull-right">Rp 2.000.000</span></h3>
+									<h3>{{$p->nama_produk}} <span class="pull-right">Rp {{$p->harga}}</span></h3>
 									<div class="packages-para">
 										<p>
 											<span>
-												<i class="fa fa-angle-right"></i> 5 hari 6 malam
+												<i class="fa fa-angle-right"></i> {{$p->itenerary}}
 											</span>
-											<i class="fa fa-angle-right"></i>  5 star
+											<i class="fa fa-angle-right"></i>  {{$p->type}}
 										</p>
 										<p>
 											<span>
-												<i class="fa fa-angle-right"></i>  transportation
+												<i class="fa fa-angle-right"></i>  {{$p->fasilitas}}
 											</span>
-											<i class="fa fa-angle-right"></i>  food facilities
+											<i class="fa fa-angle-right"></i>  {{$p->deskripsi}}
 										 </p>
 									</div><!--/.packages-para-->
 									<div class="packages-review">
@@ -553,201 +553,7 @@
 							</div><!--/.single-package-item-->
 
 						</div><!--/.col-->
-
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/packages/p7.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>bali <span class="pull-right">Rp 2.000.000</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> 5 hari 6 malam
-											</span>
-											<i class="fa fa-angle-right"></i>  5 star
-										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i>  transportation
-											</span>
-											<i class="fa fa-angle-right"></i>  food facilities
-										 </p>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>234 penilaian</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											pesan
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-
-						</div><!--/.col-->
-
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/packages/p7.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>bali <span class="pull-right">Rp 2.000.000</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> 5 hari 6 malam
-											</span>
-											<i class="fa fa-angle-right"></i>  5 star
-										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i>  transportation
-											</span>
-											<i class="fa fa-angle-right"></i>  food facilities
-										 </p>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>234 penilaian</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											pesan
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-
-						</div><!--/.col-->
-
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/packages/p7.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>bali <span class="pull-right">Rp 2.000.000</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> 5 hari 6 malam
-											</span>
-											<i class="fa fa-angle-right"></i>  5 star
-										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i>  transportation
-											</span>
-											<i class="fa fa-angle-right"></i>  food facilities
-										 </p>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>234 penilaian</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											pesan
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-
-						</div><!--/.col-->
-
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/packages/p7.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>bali <span class="pull-right">Rp 2.000.000</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> 5 hari 6 malam
-											</span>
-											<i class="fa fa-angle-right"></i>  5 star
-										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i>  transportation
-											</span>
-											<i class="fa fa-angle-right"></i>  food facilities
-										 </p>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>234 penilaian</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											pesan
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-
-						</div><!--/.col-->
-
-						<div class="col-md-4 col-sm-6">
-							<div class="single-package-item">
-								<img src="assets/images/packages/p7.jpg" alt="package-place">
-								<div class="single-package-item-txt">
-									<h3>bali <span class="pull-right">Rp 2.000.000</span></h3>
-									<div class="packages-para">
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i> 5 hari 6 malam
-											</span>
-											<i class="fa fa-angle-right"></i>  5 star
-										</p>
-										<p>
-											<span>
-												<i class="fa fa-angle-right"></i>  transportation
-											</span>
-											<i class="fa fa-angle-right"></i>  food facilities
-										 </p>
-									</div><!--/.packages-para-->
-									<div class="packages-review">
-										<p>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>234 penilaian</span>
-										</p>
-									</div><!--/.packages-review-->
-									<div class="about-btn">
-										<button  class="about-view packages-btn">
-											pesan
-										</button>
-									</div><!--/.about-btn-->
-								</div><!--/.single-package-item-txt-->
-							</div><!--/.single-package-item-->
-
-						</div><!--/.col-->
+						@endforeach
 
 					</div><!--/.row-->
 				</div><!--/.packages-content-->
@@ -765,11 +571,11 @@
 					<div class="col-md-4 col-sm-4">
 						<div class="single-service-box">
 							<div class="service-img">
-								<img src="assets/images/service/s1.png" alt="service-icon" />
+								<a href="/PanduanUser"><img src="assets/images/service/s1.png" alt="service-icon" /></a>
 							</div><!--/.service-img-->
 							<div class="service-content">
 								<h2>
-									<a href="#">
+									<a href="/PanduanUser">
 									Panduan
 									</a>
 								</h2>
@@ -817,7 +623,7 @@
 		</section><!--/.service-->
 		<!--service end-->
 
-		<!--discount-offer start-->
+		{{-- <!--discount-offer start-->
 		<section class="discount-offer">
 			<div class="container">
 				<div class="row">
@@ -854,9 +660,10 @@
 			</div><!-- /.container-->
 
 		</section><!-- /.discount-offer-->
-		<!--discount-offer end-->
+		<!--discount-offer end--> --}}
 
-		<!--blog start-->
+		{{-- <!--blog start-->
+		
 		<section id="blog" class="blog">
 			<div class="container">
 				<div class="blog-details">
@@ -870,25 +677,25 @@
 						</div><!--/.gallery-header-->
 						<div class="blog-content">
 							<div class="row">
-
+								@foreach($artikel as $ar)
 								<div class="col-sm-4 col-md-4">
 									<div class="thumbnail">
-										<h2>trending news <span>15 november 2017</span></h2>
+										<h2>{{$ar->tags}} <span>{{$ar->created_at}}</span></h2>
 										<div class="thumbnail-img">
-											<img src="assets/images/blog/b1.jpg" alt="blog-img">
+											<img src="{{asset('article/'.$ar->gbr1)}}" alt="gambar1">
 											<div class="thumbnail-img-overlay"></div><!--/.thumbnail-img-overlay-->
 										
-										</div><!--/.thumbnail-img-->
+										</div><!--/.thumbnail-img--> 
 									  
 										<div class="caption">
 											<div class="blog-txt">
 												<h3>
 													<a href="#">
-														Discover on beautiful weather, Fantastic foods and historical place in Prag
+														{{$ar->judul}}
 													</a>
 												</h3>
 												<p>
-													Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut labore et dolore magna aliqua. Ut enim ad minim veniam 
+													{{$ar->deskripsi}} 
 												</p>
 												<a href="#">Read More</a>
 											</div><!--/.blog-txt-->
@@ -896,52 +703,7 @@
 									</div><!--/.thumbnail-->
 
 								</div><!--/.col-->
-
-								<div class="col-sm-4 col-md-4">
-									<div class="thumbnail">
-										<h2>trending news <span>15 november 2017</span></h2>
-										<div class="thumbnail-img">
-											<img src="assets/images/blog/b2.jpg" alt="blog-img">
-											<div class="thumbnail-img-overlay"></div><!--/.thumbnail-img-overlay-->
-										
-										</div><!--/.thumbnail-img-->
-										<div class="caption">
-											<div class="blog-txt">
-												<h3>
-													<a href="#">
-														Discover on beautiful weather, Fantastic foods and historical place in india
-													</a>
-												</h3>
-												<p>
-													Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut labore et dolore magna aliqua. Ut enim ad minim veniam 
-												</p>
-												<a href="#">Read More</a>
-											</div><!--/.blog-txt-->
-										</div><!--/.caption-->
-									</div><!--/.thumbnail-->
-
-								</div><!--/.col-->
-
-								<div class="col-sm-4 col-md-4">
-									<div class="thumbnail">
-										<h2>trending news <span>15 november 2017</span></h2>
-										<div class="thumbnail-img">
-											<img src="assets/images/blog/b3.jpg" alt="blog-img">
-											<div class="thumbnail-img-overlay"></div><!--/.thumbnail-img-overlay-->
-										
-										</div><!--/.thumbnail-img-->
-										<div class="caption">
-											<div class="blog-txt">
-												<h3><a href="#">10 Most Natural place to Discover</a></h3>
-												<p>
-													Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut labore et dolore magna aliqua. Ut enim ad minim veniam 
-												</p>
-												<a href="#">Read More</a>
-											</div><!--/.blog-txt-->
-										</div><!--/.caption-->
-									</div><!--/.thumbnail-->
-
-								</div><!--/.col-->
+								@endforeach
 
 							</div><!--/.row-->
 						</div><!--/.blog-content-->
@@ -949,7 +711,7 @@
 				</div><!--/.container-->
 
 		</section><!--/.blog-->
-		<!--blog end-->
+		<!--blog end--> --}}
 		<!-- testemonial Start -->		
 
 		<!--special-offer start-->
@@ -1164,8 +926,6 @@
 
 		@include('layouts_user.footer')
 
-
-
 		<script src="assets/js/jquery.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 
@@ -1202,6 +962,7 @@
 
 		<!--Custom JS-->
 		<script src="assets/js/custom.js"></script>
+
 
 
 	</body>

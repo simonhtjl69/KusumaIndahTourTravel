@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Artikel;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use phpDocumentor\Reflection\Types\Nullable;
 
@@ -14,7 +15,6 @@ class ArtikelController extends Controller
         $artikel = Artikel::latest()->get();
         return view('admin.article', compact(['artikel']));
     }
-
 
     public function create(Request $request)
     {

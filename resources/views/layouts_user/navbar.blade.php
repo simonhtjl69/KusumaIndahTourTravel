@@ -5,7 +5,7 @@
 					<div class="row">
 						<div class="col-sm-2">
 							<div class="logo">
-								<a href="index.html">
+								<a href="/">
 									Kusuma<span>Travel</span>
 								</a>
 							</div><!-- /.logo-->
@@ -21,13 +21,13 @@
 								</div><!-- /.navbar-header-->
 								<div class="collapse navbar-collapse">		  
 									<ul class="nav navbar-nav navbar-right">
-										<li class="smooth-menu"><a href="#home">home</a></li>
-										<li class="smooth-menu"><a href="#gallery">Destinasi</a></li>
-										<li class="smooth-menu"><a href="#pack">Produk </a></li>
-										<li class="smooth-menu"><a href="#spo">Promo</a></li>
-										<li class="smooth-menu"><a href="#blog">Artikel</a></li>
-										<li class="smooth-menu"><a href="#subs">subscription</a></li>
-										<li class="smooth-menu"><a href="#">Login</a></li>
+										<li><a href="/">home</a></li>
+										<li><a href="#gallery">Destinasi</a></li>
+										<li><a href="/ProdukUser">Produk </a></li>
+										<li><a href="#spo">Promo</a></li>
+										<li><a href="/ArtikelUser">Artikel</a></li>
+										<li><a href="#subs">subscription</a></li>
+										<li><a href="#">Login</a></li>
 										<!--/.project-btn--> 
 									</ul>
 								</div><!-- /.navbar-collapse -->

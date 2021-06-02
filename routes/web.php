@@ -13,9 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user.index');
-});
+
+//User Index
+Route::get('/', 'UserIndexController@index');
+
+//User Artikel
+Route::get('/ArtikelUser', 'UserArtikelController@index');
+Route::get('/ArtikelUser/tampil/{id}','UserArtikelController@tampilArtikel');
+
+//User Produk
+Route::get('/ProdukUser','UserProdukController@index');
+
+//User Panduan
+Route::get('/PanduanUser','UserPanduanController@index');
+Route::get('/PanduanUser/OpenTrip','UserPanduanController@openTrip');
+Route::get('/PanduanUser/PrivateTrip','UserPanduanController@privateTrip');
+Route::get('/PanduanUser/TravelReguler','UserPanduanController@travelReguler');
+
+
 Route::get('admin/', function () {
     return view('admin.index');
 });
@@ -53,3 +68,7 @@ Route::get('/produk', 'ProdukController@index');
 Route::post('/create/produk', 'ProdukController@create');
 Route::get('/delete/{id}/produk', 'ProdukController@delete');
 Route::post('/edit/{id}/produk', 'ProdukController@update');
+
+//User
+//Artikel
+Route::get('/ArtikelUser','UserArtikelController@index');
