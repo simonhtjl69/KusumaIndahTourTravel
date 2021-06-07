@@ -23,17 +23,13 @@
 								<div class="collapse navbar-collapse">		  
 									<ul class="nav navbar-nav navbar-right">
 										<li><a href="/">home</a></li>
-										<li><a href="#gallery">Destinasi</a></li>
-										<li><a href="/ProdukUser">Produk </a></li>
-										<li><a href="#spo">Promo</a></li>
-										<li><a href="/ArtikelUser">Artikel</a></li>
-										<li><a href="#subs">subscription</a></li>
-										<li><a href="#">Login</a></li>
+										
+										
 										<li class="smooth-menu"><a href="#home">home</a></li>
 										<li class="smooth-menu"><a href="#gallery">Destinasi</a></li>
-										<li class="smooth-menu"><a href="#pack">Produk </a></li>
+										<li><a href="/ProdukUser">Produk </a></li>
+										<li><a href="/ArtikelUser">Artikel</a></li>
 										<li class="smooth-menu"><a href="#spo">Promo</a></li>
-										<li class="smooth-menu"><a href="#blog">Artikel</a></li>
 										<li class="smooth-menu"><a href="#subs">subscription</a></li>
 										@if(!Auth::check())
 										<li><a href="{{url('/login')}}">Login</a></li>
