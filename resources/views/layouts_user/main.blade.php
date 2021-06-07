@@ -17,7 +17,7 @@
 		<title>@yield('title','Home')</title>
 
 		<!-- favicon img -->
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/icon.jpeg"/>
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/icon.png"/>
 
 		<!--font-awesome.min.css-->
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
@@ -39,7 +39,7 @@
         <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
 
 		<!--bootstrap.min.css-->
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
 		<!-- bootsnav -->
 		<link rel="stylesheet" href="assets/css/bootsnav.css"/>
@@ -62,6 +62,7 @@
 
 	<body>
 		@include('layouts_user.navbar')
+	
 		<!--about-us start -->
 		<section id="home" class="about-us">
 			<div class="container">
