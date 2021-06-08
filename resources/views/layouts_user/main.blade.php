@@ -401,7 +401,7 @@
         </section><!--/.travel-box-->
 		<!--travel-box end-->    
 
-		{{-- <!--galley start-->
+		<!--galley start-->
 		<section id="gallery" class="gallery">
 			<div class="container">
 				<div class="gallery-details">
@@ -499,7 +499,7 @@
 			</div><!--/.container-->
 
 		</section><!--/.gallery-->
-		<!--gallery end--> --}}
+		<!--gallery end-->
 
 		<!--packages start-->
 		<section  class="packages">
@@ -623,7 +623,7 @@
 		</section><!--/.service-->
 		<!--service end-->
 
-		{{-- <!--discount-offer start-->
+		<!--discount-offer start-->
 		<section class="discount-offer">
 			<div class="container">
 				<div class="row">
@@ -660,10 +660,9 @@
 			</div><!-- /.container-->
 
 		</section><!-- /.discount-offer-->
-		<!--discount-offer end--> --}}
+		<!--discount-offer end-->
 
-		{{-- <!--blog start-->
-		
+		<!--blog start-->	
 		<section id="blog" class="blog">
 			<div class="container">
 				<div class="blog-details">
@@ -697,7 +696,7 @@
 												<p>
 													{{$ar->deskripsi}} 
 												</p>
-												<a href="#">Read More</a>
+												<a href="/ArtikelUser">Baca Selengkapnya</a>
 											</div><!--/.blog-txt-->
 										</div><!--/.caption-->
 									</div><!--/.thumbnail-->
@@ -711,7 +710,8 @@
 				</div><!--/.container-->
 
 		</section><!--/.blog-->
-		<!--blog end--> --}}
+		<!--blog end-->
+
 		<!-- testemonial Start -->		
 
 		<!--special-offer start-->
