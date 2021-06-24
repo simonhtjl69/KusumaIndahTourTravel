@@ -1,6 +1,7 @@
 <?php
 
 use App\Produk;
+use App\Artikel;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -24,9 +25,9 @@ Route::get('/', 'UserIndexController@index');
 
 Route::get('/', function () {
     if (!Auth::check() || Auth::user()->email_verified_at) {
-
+        $artikel = Artikel::orderBy('created_at', 'ASC')->take(3)->get();
         $produk = Produk::orderBy('nama_produk', 'ASC')->take(6)->get();
-        return view('layouts_user.main', ['produk' => $produk]);
+        return view('layouts_user.main', ['produk' => $produk, 'artikel' => $artikel]);
     } else {
         return redirect('/email/verify');
     }

@@ -115,9 +115,9 @@
 
 
 
-  <input type="submit" class="btn btn-primary  btn-md btn-block text-uppercase" style="border-radius:10px; background-color:#00d8ff; border-color:#00d8ff; margin-top:50px;" value="Login" style="text-align: center;">
+  <input type="submit" class="btn btn-primary  btn-md btn-block text-uppercase" style="border-radius:10px; background-color:#00d8ff; border-color:#00d8ff; margin-top:50px;" value="Register" style="text-align: center;">
 	<div class="bottom" style="padding-top:10px;">
-	<span class="helper-text">Sudah Memiliki Akun ? <a href="/login">Register</a></span>
+	<span class="helper-text">Sudah Memiliki Akun ? <a href="/login">Login</a></span>
   </div>
 </form>  
 
